@@ -192,7 +192,7 @@ rides[:24*10].plot(x='dteday', y='cnt')
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x113775358>
+    <matplotlib.axes._subplots.AxesSubplot at 0x10ab5aa20>
 
 
 
@@ -623,7 +623,7 @@ unittest.TextTestRunner().run(suite)
 
     .....
     ----------------------------------------------------------------------
-    Ran 5 tests in 0.005s
+    Ran 5 tests in 0.012s
     
     OK
 
@@ -655,8 +655,8 @@ The more hidden nodes you have, the more accurate predictions the model will mak
 import sys
 
 ### Set the hyperparameters here ###
-iterations = 3000
-learning_rate = 0.1
+iterations = 8000
+learning_rate = 0.6
 hidden_nodes = 10
 output_nodes = 1
 
@@ -683,7 +683,7 @@ for ii in range(iterations):
     losses['validation'].append(val_loss)
 ```
 
-    Progress: 100.0% ... Training loss: 0.259 ... Validation loss: 0.427
+    Progress: 100.0% ... Training loss: 0.054 ... Validation loss: 0.128
 
 
 ```python
@@ -729,3 +729,8 @@ Answer these questions about your results. How well does the model predict the d
 > **Note:** You can edit the text in this cell by double clicking on it. When you want to render the text, press control + enter
 
 #### Your answer below
+
+
+```python
+
+```
