@@ -192,7 +192,7 @@ rides[:24*10].plot(x='dteday', y='cnt')
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x10ab5aa20>
+    <matplotlib.axes._subplots.AxesSubplot at 0x10a0a2898>
 
 
 
@@ -623,7 +623,7 @@ unittest.TextTestRunner().run(suite)
 
     .....
     ----------------------------------------------------------------------
-    Ran 5 tests in 0.012s
+    Ran 5 tests in 0.011s
     
     OK
 
@@ -655,9 +655,9 @@ The more hidden nodes you have, the more accurate predictions the model will mak
 import sys
 
 ### Set the hyperparameters here ###
-iterations = 8000
-learning_rate = 0.6
-hidden_nodes = 10
+iterations = 12000
+learning_rate = 0.5
+hidden_nodes = 23
 output_nodes = 1
 
 N_i = train_features.shape[1]
@@ -683,7 +683,7 @@ for ii in range(iterations):
     losses['validation'].append(val_loss)
 ```
 
-    Progress: 100.0% ... Training loss: 0.054 ... Validation loss: 0.128
+    Progress: 100.0% ... Training loss: 0.049 ... Validation loss: 0.152
 
 
 ```python
